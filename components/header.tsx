@@ -1,0 +1,107 @@
+"use client"
+
+import { useState, useEffect } from "react"
+import Link from "next/link"
+import { Menu, X, Github } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { ThemeToggle } from "@/components/theme-toggle"
+
+const GITHUB_URL = "https://github.com/senti-001/neural-chromium"
+
+const navLinks = [
+  { href: "#overview", label: "Overview" },
+  { href: "#status", label: "Status" },
+  { href: "#community", label: "Community" },
+  { href: "#senti-001", label: "Senti-001" },
+]
+
+export function Header() {
+  const [mobileOpen, setMobileOpen] = useState(false)
+
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = ""
+    }
+    return () => {
+      document.body.style.overflow = ""
+    }
+  }, [mobileOpen])
+
+  return (
+    <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-md">
+      <nav aria-label="Main navigation" className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 sm:h-16 sm:px-6">
+        <Link href="/" className="flex items-center gap-2" aria-label="Neural Chromium home">
+          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary sm:h-8 sm:w-8">
+            <span className="font-mono text-xs font-bold text-primary-foreground sm:text-sm">NC</span>
+          </div>
+          <span className="font-mono text-base font-semibold tracking-tight text-foreground sm:text-lg">
+            Neural Chromium
+          </span>
+        </Link>
+
+        <div className="hidden items-center gap-1 md:flex">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="rounded-md px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+
+        <div className="flex items-center gap-1 sm:gap-2">
+          <ThemeToggle />
+          <Button variant="outline" size="sm" className="hidden gap-2 bg-transparent md:flex" asChild>
+            <Link href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
+              <Github className="h-4 w-4" />
+              <span>GitHub</span>
+            </Link>
+          </Button>
+          <Button
+            variant="ghost"
+            size="icon"
+            className="h-9 w-9 md:hidden"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileOpen}
+          >
+            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </Button>
+        </div>
+      </nav>
+
+      {/* Mobile menu overlay */}
+      {mobileOpen && (
+        <div className="fixed inset-x-0 top-14 bottom-0 z-40 bg-background/95 backdrop-blur-sm sm:top-16 md:hidden">
+          <nav aria-label="Mobile navigation" className="flex flex-col gap-1 px-4 py-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="rounded-lg px-4 py-3 text-base font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                onClick={() => setMobileOpen(false)}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <Link
+              href={GITHUB_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2.5 rounded-lg px-4 py-3 text-base font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+              onClick={() => setMobileOpen(false)}
+            >
+              <Github className="h-4 w-4" />
+              GitHub
+            </Link>
+          </nav>
+        </div>
+      )}
+    </header>
+  )
+}
