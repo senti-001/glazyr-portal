@@ -14,7 +14,7 @@ export function HeroSection() {
           <div className="mb-8 flex justify-center">
             <div className="relative h-40 w-40 overflow-hidden rounded-2xl shadow-2xl shadow-primary/20 transition-transform hover:scale-105 sm:h-48 sm:w-48">
               <Image
-                src="/Untitled design (2).png"
+                src="/Untitled design (3).png"
                 alt="Neural Chromium Logo"
                 fill
                 className="object-cover"
