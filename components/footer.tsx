@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 import { Github } from "lucide-react"
 
@@ -9,8 +10,13 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <Link href="/" className="flex items-center gap-2" aria-label="Neural Chromium home">
-            <div className="flex h-7 w-7 items-center justify-center rounded-md bg-primary">
-              <span className="font-mono text-xs font-bold text-primary-foreground">NC</span>
+            <div className="relative flex h-7 w-7 items-center justify-center overflow-hidden rounded-md">
+              <Image
+                src="/image.png"
+                alt="Neural Chromium Logo"
+                fill
+                className="object-cover"
+              />
             </div>
             <span className="font-mono text-sm text-muted-foreground">
               Neural Chromium
