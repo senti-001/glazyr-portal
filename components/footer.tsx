@@ -12,7 +12,7 @@ export function Footer() {
           <Link href="/" className="flex items-center gap-2" aria-label="Neural Chromium home">
             <div className="relative flex h-8 w-8 items-center justify-center">
               <Image
-                src="/Untitled design (4).png"
+                src="/Untitled design (7).png"
                 alt="Neural Chromium Logo"
                 fill
                 className="object-contain"
