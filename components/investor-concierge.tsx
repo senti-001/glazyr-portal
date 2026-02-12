@@ -25,6 +25,22 @@ export function InvestorConcierge() {
                     <Mic2 className="h-3.5 w-3.5" />
                     ACTIVATE VOICE AGENT
                 </a>
+
+                <div className="mt-8 flex flex-col items-center gap-3">
+                    <p className="font-mono text-[10px] text-muted-foreground uppercase tracking-wider">Scan to Connect</p>
+                    <a
+                        href="https://agent.jotform.com/019c5149774973eba96df2610d62da643ca3?utm_source=share-qr-agent&utm_medium=website&utm_campaign=agent-app&utm_term=019c5149774973eba96df2610d62da643ca3"
+                        rel="no-follow"
+                        className="rounded-lg border border-border/50 bg-white p-2 shadow-sm transition-all hover:scale-105"
+                    >
+                        <img
+                            src="https://www.jotform.com/uploads/williamtflynn/form_files/019c5149774973eba96df2610d62da643ca3_1770891755_qrcode_muse.png"
+                            width="100%"
+                            style={{ maxWidth: "120px" }}
+                            alt="QR Code for Agent"
+                        />
+                    </a>
+                </div>
             </div>
 
             <Script
