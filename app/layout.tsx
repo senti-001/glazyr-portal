@@ -1,11 +1,12 @@
 import React from "react"
 import type { Metadata, Viewport } from "next"
-import { Inter, JetBrains_Mono } from "next/font/google"
+import { Inter, JetBrains_Mono, Outfit } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
+const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" })
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-jetbrains-mono",
@@ -96,7 +97,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${outfit.variable} ${jetbrainsMono.variable}`}>
       <head>
         <script
           type="application/ld+json"

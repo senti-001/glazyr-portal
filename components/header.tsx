@@ -34,8 +34,16 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-md">
       <nav aria-label="Main navigation" className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 sm:h-16 sm:px-6">
-        <Link href="/" className="flex items-center gap-2" aria-label="Neural Chromium home">
-          <span className="font-mono text-base font-semibold tracking-tight text-foreground sm:text-lg">
+        <Link href="/" className="flex items-center gap-3" aria-label="Neural Chromium home">
+          <div className="relative h-8 w-8 overflow-hidden rounded-md">
+            <Image
+              src="/Untitled design (4).png"
+              alt=""
+              fill
+              className="object-contain"
+            />
+          </div>
+          <span className="font-outfit text-lg font-bold tracking-tight text-foreground sm:text-xl">
             Neural Chromium
           </span>
         </Link>
