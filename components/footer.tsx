@@ -46,10 +46,32 @@ export function Footer() {
                 Tokenomics
               </Link>
               <Link
+                href="#developers"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Developers
+              </Link>
+              <Link
                 href="#bounties"
                 className="text-sm text-muted-foreground transition-colors hover:text-foreground"
               >
                 Bounties
+              </Link>
+              <Link
+                href={GITHUB_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                GitHub
+              </Link>
+              <Link
+                href="https://github.com/senti-001/neural-chromium-contracts"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Smart Contracts
               </Link>
               <Link
                 href={GITHUB_URL}

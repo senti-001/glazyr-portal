@@ -34,12 +34,13 @@ export function HeroSection() {
           <h1 id="hero-heading" className="text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
             The Sovereign Fork:
             <br />
-            <span className="text-primary">Architecting the Agentic Web</span>
+            <span className="text-primary">Foundational Rails for the Agentic Web</span>
           </h1>
 
           <p className="mx-auto mt-4 max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground sm:mt-6 sm:text-lg">
-            Neural Chromium is the first operating environment designed to bypass the "pixel bottleneck" for silicon intelligence.
-            Built on Chromium, NATS JetStream, and Solana—it's not just a browser for agents, it's the foundation of the Sovereign Fork.
+            Neural Chromium is industrial-grade infrastructure for agentic perception and action.
+            Built on Chromium, NATS JetStream, and Solana—this isn't a tool, it's the foundational architecture
+            for the Sovereign Cloud. Zero-Copy Vision. Phoenix Protocol. Hardware-backed $NEURAL economics.
           </p>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:mt-10 sm:flex-row sm:gap-4">

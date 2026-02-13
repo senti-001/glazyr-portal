@@ -36,11 +36,12 @@ export function OverviewSection() {
             Architecture
           </p>
           <h2 id="overview-heading" className="mt-3 text-balance text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
-            Purpose-Built for Agentic Computing
+            Industrial Infrastructure for Agentic Computing
           </h2>
           <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Neural Chromium reimagines the browser as infrastructure for AI agents. Every component
-            is designed for programmatic, high-throughput interaction.
+            Neural Chromium reimagines the browser as industrial-grade infrastructure for AI agents.
+            Every component is designed for high-throughput, low-latency programmatic interaction.
+            Powered by NVIDIA 5090 clusters and EC2 Big Iron.
           </p>
         </div>
 

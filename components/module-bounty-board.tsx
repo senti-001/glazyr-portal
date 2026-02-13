@@ -19,34 +19,34 @@ interface Bounty {
 
 const bounties: Bounty[] = [
     {
-        icon: Code2,
-        title: "Action Layer: Direct DOM-Tree Injection",
-        description: "Build the action layer for direct DOM manipulation, bypassing traditional click simulation. Implement a zero-copy pathway from agent commands to browser DOM mutations.",
-        difficulty: "Advanced",
-        scope: "~2,000 LOC, C++ & Python",
-        reward: "Developer DAO Funded",
-        githubIssue: `${GITHUB_URL}/issues/new?labels=bounty,action-layer`,
-        tags: ["C++", "Chromium", "DOM API"]
+        icon: Shield,
+        title: "NC-BTY-001: IPI Shield",
+        description: "Implement Indirect Prompt Injection protection for the Sovereign Fork. Build detection and scrubbing for hidden text attacks, plus Semantic Provenance tracking to verify content authenticity.",
+        difficulty: "Expert",
+        scope: "~2,500 LOC, C++ & Python",
+        reward: "2,500,000 $NEURAL",
+        githubIssue: `${GITHUB_URL}/issues/new?labels=bounty,ipi-shield`,
+        tags: ["C++", "Security", "NLP"]
     },
     {
-        icon: Shield,
-        title: "Privacy Layer: On-Chain ZK-Browsing",
-        description: "Implement zero-knowledge proof system for private browsing verification. Enable agents to prove browsing actions occurred without revealing the actual content or URLs.",
-        difficulty: "Expert",
-        scope: "~3,500 LOC, Rust & Solana",
-        reward: "Developer DAO Funded",
-        githubIssue: `${GITHUB_URL}/issues/new?labels=bounty,privacy-layer`,
-        tags: ["Rust", "ZK-SNARKs", "Solana"]
+        icon: Code2,
+        title: "NC-BTY-002: Semantic DOM Pointer",
+        description: "Build intent-based DOM mapping system for low-latency agentic interaction. Enable agents to reference elements by semantic intent (e.g., @buy_button) rather than fragile CSS selectors.",
+        difficulty: "Advanced",
+        scope: "~1,800 LOC, C++ & JavaScript",
+        reward: "1,500,000 $NEURAL",
+        githubIssue: `${GITHUB_URL}/issues/new?labels=bounty,semantic-dom`,
+        tags: ["DOM API", "JavaScript", "Chromium"]
     },
     {
         icon: Cpu,
-        title: "Compute Layer: WebGPU Acceleration",
-        description: "Integrate WebGPU for accelerated VLM inference and visual processing. Enable on-device GPU acceleration for vision models directly in the browser runtime.",
+        title: "NC-BTY-003: Identity Vaporization",
+        description: "Implement automated session shredding logic for clean-state agentic sessions. Ensure complete identity reset between agent tasks with zero residual fingerprinting data.",
         difficulty: "Advanced",
-        scope: "~1,800 LOC, C++ & WGSL",
-        reward: "Developer DAO Funded",
-        githubIssue: `${GITHUB_URL}/issues/new?labels=bounty,compute-layer`,
-        tags: ["WebGPU", "WGSL", "VLM"]
+        scope: "~1,200 LOC, C++",
+        reward: "1,000,000 $NEURAL",
+        githubIssue: `${GITHUB_URL}/issues/new?labels=bounty,identity-vaporization`,
+        tags: ["Privacy", "C++", "Session Management"]
     }
 ]
 
@@ -67,7 +67,7 @@ export function ModuleBountyBoard() {
                         Module Bounty Board
                     </h2>
                     <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-                        Build the future of agentic computing. Earn $NEURAL tokens by contributing critical infrastructure modules to the Sovereign Fork.
+                        Build critical infrastructure modules for the Sovereign Fork. Earn $NEURAL tokens (Devnet) by solving hard technical challenges in security, DOM interaction, and privacy.
                     </p>
                 </div>
 
@@ -126,7 +126,7 @@ export function ModuleBountyBoard() {
                                             <span className="font-mono text-xs font-semibold uppercase">Bounty Reward</span>
                                         </div>
                                         <p className="mt-1 font-mono text-sm font-bold text-foreground">{bounty.reward}</p>
-                                        <p className="mt-1 font-mono text-[10px] text-muted-foreground">10% Industrial Yield</p>
+                                        <p className="mt-1 font-mono text-[10px] text-muted-foreground">Devnet Sandbox</p>
                                     </div>
 
                                     <Button
