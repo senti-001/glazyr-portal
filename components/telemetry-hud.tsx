@@ -66,7 +66,7 @@ export function TelemetryHud() {
     }
 
     return (
-        <div className="rounded-xl border border-border/50 bg-card p-6 shadow-sm">
+        <div className="rounded-xl border border-border/50 bg-card p-4 sm:p-6 shadow-sm h-full">
             <div className="mb-6 flex items-center justify-between">
                 <h3 className="font-mono text-xs font-semibold uppercase tracking-wider text-primary">Runtime Telemetry</h3>
                 <span className="flex items-center gap-1.5 font-mono text-[10px] text-muted-foreground">

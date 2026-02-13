@@ -45,7 +45,7 @@ export function BuildLedger() {
     }, [])
 
     return (
-        <div className="rounded-xl border border-border/50 bg-card p-6 shadow-sm h-full flex flex-col">
+        <div className="rounded-xl border border-border/50 bg-card p-4 sm:p-6 shadow-sm h-full flex flex-col">
             <div className="mb-6 flex items-center justify-between">
                 <div className="flex items-center gap-2">
                     <Github className="h-4 w-4 text-primary" />

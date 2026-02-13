@@ -6,7 +6,7 @@ import { Mic2, MessageSquareText } from "lucide-react"
 export function InvestorConcierge() {
     return (
         <>
-            <div className="rounded-xl border border-border/50 bg-card p-6 shadow-sm flex flex-col justify-center items-center text-center bg-gradient-to-b from-card to-primary/5 h-full">
+            <div className="rounded-xl border border-border/50 bg-card p-4 sm:p-6 shadow-sm flex flex-col justify-center items-center text-center bg-gradient-to-b from-card to-primary/5 h-full">
                 <div className="mb-4 rounded-full bg-primary/10 p-3 ring-1 ring-primary/20">
                     <MessageSquareText className="h-6 w-6 text-primary" />
                 </div>
