@@ -37,8 +37,8 @@ export function Header() {
         <Link href="/" className="flex items-center gap-3" aria-label="Neural Chromium home">
           <div className="relative h-8 w-8 overflow-hidden rounded-md">
             <Image
-              src="/Untitled design (7).png"
-              alt=""
+              src="/logo.png"
+              alt="Neural Chromium Logo"
               fill
               className="object-contain"
             />
