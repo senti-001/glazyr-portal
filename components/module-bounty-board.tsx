@@ -6,49 +6,19 @@ import { Button } from "@/components/ui/button"
 
 const GITHUB_URL = "https://github.com/senti-001/neural-chromium"
 
+import bountiesData from "@/data/bounties.json"
+
 interface Bounty {
-    icon: any
+    id: string
     title: string
     description: string
     difficulty: "Advanced" | "Expert"
     scope: string
     reward: string
-    githubIssue: string
     tags: string[]
 }
 
-const bounties: Bounty[] = [
-    {
-        icon: Shield,
-        title: "NC-BTY-001: IPI Shield",
-        description: "Implement Indirect Prompt Injection protection for the Sovereign Fork. Build detection and scrubbing for hidden text attacks, plus Semantic Provenance tracking to verify content authenticity.",
-        difficulty: "Expert",
-        scope: "~2,500 LOC, C++ & Python",
-        reward: "2,500,000 $NEURAL",
-        githubIssue: `${GITHUB_URL}/issues/new?labels=bounty,ipi-shield`,
-        tags: ["C++", "Security", "NLP"]
-    },
-    {
-        icon: Code2,
-        title: "NC-BTY-002: Semantic DOM Pointer",
-        description: "Build intent-based DOM mapping system for low-latency agentic interaction. Enable agents to reference elements by semantic intent (e.g., @buy_button) rather than fragile CSS selectors.",
-        difficulty: "Advanced",
-        scope: "~1,800 LOC, C++ & JavaScript",
-        reward: "1,500,000 $NEURAL",
-        githubIssue: `${GITHUB_URL}/issues/new?labels=bounty,semantic-dom`,
-        tags: ["DOM API", "JavaScript", "Chromium"]
-    },
-    {
-        icon: Cpu,
-        title: "NC-BTY-003: Identity Vaporization",
-        description: "Implement automated session shredding logic for clean-state agentic sessions. Ensure complete identity reset between agent tasks with zero residual fingerprinting data.",
-        difficulty: "Advanced",
-        scope: "~1,200 LOC, C++",
-        reward: "1,000,000 $NEURAL",
-        githubIssue: `${GITHUB_URL}/issues/new?labels=bounty,identity-vaporization`,
-        tags: ["Privacy", "C++", "Session Management"]
-    }
-]
+const bounties = bountiesData as Bounty[]
 
 const difficultyColors = {
     "Advanced": "text-violet-500 bg-violet-500/10 border-violet-500/20",
@@ -83,7 +53,10 @@ export function ModuleBountyBoard() {
                                 <div className="flex-1">
                                     <div className="flex items-start gap-4">
                                         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                                            <bounty.icon className="h-6 w-6" />
+                                            {bounty.id === "NC-BTY-001" && <Shield className="h-6 w-6" />}
+                                            {bounty.id === "NC-BTY-002" && <Code2 className="h-6 w-6" />}
+                                            {bounty.id === "NC-BTY-003" && <Cpu className="h-6 w-6" />}
+                                            {!["NC-BTY-001", "NC-BTY-002", "NC-BTY-003"].includes(bounty.id) && <TrendingUp className="h-6 w-6" />}
                                         </div>
                                         <div className="flex-1">
                                             <div className="flex flex-wrap items-center gap-2 mb-2">
@@ -134,7 +107,7 @@ export function ModuleBountyBoard() {
                                         className="w-full gap-2 font-mono text-sm lg:w-auto"
                                         asChild
                                     >
-                                        <Link href={bounty.githubIssue} target="_blank" rel="noopener noreferrer">
+                                        <Link href={`${GITHUB_URL}/issues/new?labels=bounty,${bounty.id.toLowerCase()}`} target="_blank" rel="noopener noreferrer">
                                             <TrendingUp className="h-4 w-4" />
                                             Claim Bounty
                                         </Link>

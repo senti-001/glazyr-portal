@@ -4,22 +4,15 @@ import { useEffect, useState } from "react"
 import { CheckCircle2, Circle, Loader2 } from "lucide-react"
 import { Progress } from "@/components/ui/progress"
 
-const milestones = [
-  { label: "Project scaffolding & repository setup", status: "complete" as const },
-  { label: "NATS JetStream integration design", status: "complete" as const },
-  { label: "Custom browser modifications (Visual Cortex, Shared Memory)", status: "complete" as const },
-  { label: "Python control API layer (Nexus Agent)", status: "complete" as const },
-  { label: "STT & Audio Pipeline implementation", status: "in-progress" as const },
-  { label: "Real-world VLM Benchmarking", status: "in-progress" as const },
-  { label: "Agent protocol refinement", status: "pending" as const },
-  { label: "Production-ready build system", status: "pending" as const },
-]
+import statusData from "@/data/status.json"
+
+const milestones = statusData.milestones as { label: string, status: "complete" | "in-progress" | "pending" }[]
 
 export function StatusSection() {
   const [progress, setProgress] = useState(0)
 
   useEffect(() => {
-    const timer = setTimeout(() => setProgress(68), 500)
+    const timer = setTimeout(() => setProgress(statusData.progress), 500)
     return () => clearTimeout(timer)
   }, [])
 
