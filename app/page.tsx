@@ -9,6 +9,8 @@ import { NeuralTokenomics } from "@/components/neural-tokenomics"
 import { DeveloperResources } from "@/components/developer-resources"
 import { GatewaySection } from "@/components/gateway-section"
 import { ModuleBountyBoard } from "@/components/module-bounty-board"
+import { BenchmarkComparison } from "@/components/benchmark-comparison"
+import { DistributionManifest } from "@/components/distribution-manifest"
 import { SentiSection } from "@/components/senti-section"
 import { Footer } from "@/components/footer"
 
@@ -22,7 +24,9 @@ export default function Page() {
         <OverviewSection />
         <PhoenixProtocol />
         <SecurityArchitecture />
+        <BenchmarkComparison />
         <StatusSection />
+        <DistributionManifest />
         <NeuralTokenomics />
         <DeveloperResources />
         <ModuleBountyBoard />

@@ -5,6 +5,7 @@ import { Code2, Shield, Cpu, TrendingUp, Coins } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const GITHUB_URL = "https://github.com/senti-001/neural-chromium"
+const SOVEREIGN_LINK = "https://form.typeform.com/to/sbdm0689"
 
 import bountiesData from "@/data/bounties.json"
 
@@ -150,10 +151,12 @@ export function ModuleBountyBoard() {
                     <p className="text-sm text-muted-foreground">
                         Have an idea for a new bounty?{" "}
                         <Link
-                            href={`${GITHUB_URL}/issues/new?labels=bounty-proposal`}
+                            href={SOVEREIGN_LINK}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="text-primary hover:underline font-medium"
                         >
-                            Propose it on GitHub
+                            Propose it via Sovereign Link
                         </Link>
                     </p>
                 </div>

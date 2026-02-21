@@ -15,13 +15,13 @@ const siteUrl = "https://neuralchromium.dev"
 
 export const metadata: Metadata = {
   title: {
-    default: "Neural Chromium — The Agentic Web Runtime",
-    template: "%s | Neural Chromium",
+    default: "Glazyr Viz — The Agentic Web Runtime",
+    template: "%s | Glazyr Viz",
   },
   description:
-    "Neural Chromium is an agentic web runtime built on Chromium, NATS JetStream, and Python. Designed from the ground up for programmatic control by AI agents.",
+    "Glazyr Viz is an agentic web runtime built on Chromium, NATS JetStream, and Python. Designed from the ground up for programmatic control by AI agents.",
   keywords: [
-    "Neural Chromium",
+    "Glazyr Viz",
     "agentic web runtime",
     "AI agents",
     "Chromium",
@@ -47,22 +47,20 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    siteName: "Neural Chromium",
-    title: "Neural Chromium — The Agentic Web Runtime",
-    description:
-      "An agentic web runtime built on Chromium, NATS JetStream, and Python. Designed for programmatic control by AI agents.",
+    siteName: "Glazyr Viz",
+    title: "Glazyr Viz — The Agentic Web Runtime",
+    description: "Sovereign intelligence dispersal and agentic web execution.",
     images: [
       {
-        url: "/Untitled design (7).png",
+        url: "/og-image.png",
         width: 1200,
-        height: 1200,
-        alt: "Neural Chromium Logo",
+        height: 630,
+        alt: "Glazyr Viz Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Neural Chromium — The Agentic Web Runtime",
     description:
       "An agentic web runtime built on Chromium, NATS JetStream, and Python. Designed for programmatic control by AI agents.",
     images: ["/Untitled design (7).png"],
@@ -104,7 +102,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "SoftwareApplication",
-              name: "Neural Chromium",
+              name: "Glazyr Viz",
               description:
                 "An agentic web runtime built on Chromium, NATS JetStream, and Python.",
               applicationCategory: "DeveloperApplication",

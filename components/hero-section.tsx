@@ -3,7 +3,8 @@ import Link from "next/link"
 import { ArrowRight, Github } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-const GITHUB_URL = "https://github.com/senti-001/neural-chromium"
+const GITHUB_URL = "https://github.com/senti-001/glazyr-viz"
+const SOVEREIGN_LINK = "https://form.typeform.com/to/sbdm0689"
 
 export function HeroSection() {
   return (
@@ -15,7 +16,7 @@ export function HeroSection() {
             <div className="relative h-48 w-48 transition-transform hover:scale-105 sm:h-64 sm:w-64">
               <Image
                 src="/Untitled design (4).png"
-                alt="Neural Chromium Logo"
+                alt="Glazyr Viz Logo"
                 fill
                 className="object-contain"
                 priority
@@ -38,22 +39,22 @@ export function HeroSection() {
           </h1>
 
           <p className="mx-auto mt-4 max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground sm:mt-6 sm:text-lg">
-            Neural Chromium is industrial-grade infrastructure for agentic perception and action.
+            Glazyr Viz is industrial-grade infrastructure for agentic perception and action.
             Built on Chromium, NATS JetStream, and Solana—this isn't a tool, it's the foundational architecture
-            for the Sovereign Cloud. Zero-Copy Vision. Phoenix Protocol. Hardware-backed $NEURAL economics.
+            for the Sovereign Cloud. Zero-Copy Vision. Phoenix Protocol. Hardware-backed $GLAZYR economics.
           </p>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:mt-10 sm:flex-row sm:gap-4">
             <Button size="lg" className="w-full gap-2 font-mono text-sm sm:w-auto" asChild>
-              <Link href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
-                <Github className="h-4 w-4" />
-                View on GitHub
+              <Link href={SOVEREIGN_LINK} target="_blank" rel="noopener noreferrer">
+                <ArrowRight className="h-4 w-4" />
+                Initialize Sovereign Link
               </Link>
             </Button>
             <Button variant="outline" size="lg" className="w-full gap-2 bg-transparent font-mono text-sm sm:w-auto" asChild>
-              <Link href="#overview">
-                Learn More
-                <ArrowRight className="h-4 w-4" />
+              <Link href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
+                <Github className="h-4 w-4" />
+                View Architecture
               </Link>
             </Button>
           </div>
@@ -69,16 +70,16 @@ export function HeroSection() {
             </div>
             <div className="space-y-1.5 text-muted-foreground">
               <p className="whitespace-nowrap">
-                <span className="text-primary">$</span> git clone https://github.com/senti-001/neural-chromium.git
+                <span className="text-primary">$</span> git clone https://github.com/senti-001/glazyr-viz.git
               </p>
               <p>
-                <span className="text-primary">$</span> cd neural-chromium
+                <span className="text-primary">$</span> cd glazyr-viz
               </p>
               <p>
                 <span className="text-primary">$</span> python3 nexus_agent.py --vlm openai
               </p>
               <p className="text-muted-foreground/60">
-                {"// Running the Neural Chromium agent..."}
+                {"// Running the Glazyr Viz agent..."}
               </p>
             </div>
           </div>

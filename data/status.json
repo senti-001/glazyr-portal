@@ -1,38 +1,38 @@
 {
-    "progress": 68,
-    "current_milestone": "STT & Audio Pipeline",
-    "milestones": [
-        {
-            "label": "Project scaffolding & repository setup",
-            "status": "complete"
-        },
-        {
-            "label": "NATS JetStream integration design",
-            "status": "complete"
-        },
-        {
-            "label": "Custom browser modifications (Visual Cortex, Shared Memory)",
-            "status": "complete"
-        },
-        {
-            "label": "Python control API layer (Nexus Agent)",
-            "status": "complete"
-        },
-        {
-            "label": "STT & Audio Pipeline implementation",
-            "status": "in-progress"
-        },
-        {
-            "label": "Real-world VLM Benchmarking",
-            "status": "in-progress"
-        },
-        {
-            "label": "Agent protocol refinement",
-            "status": "pending"
-        },
-        {
-            "label": "Production-ready build system",
-            "status": "pending"
-        }
-    ]
+  "progress": 88,
+  "current_milestone": "Production distribution manifest",
+  "milestones": [
+    {
+      "label": "Project scaffolding & repository setup",
+      "status": "complete"
+    },
+    {
+      "label": "NATS JetStream integration design",
+      "status": "complete"
+    },
+    {
+      "label": "Custom browser modifications (Visual Cortex, Shared Memory)",
+      "status": "complete"
+    },
+    {
+      "label": "Python control API layer (Nexus Agent)",
+      "status": "complete"
+    },
+    {
+      "label": "STT & Audio Pipeline implementation",
+      "status": "complete"
+    },
+    {
+      "label": "Real-world VLM Benchmarking",
+      "status": "complete"
+    },
+    {
+      "label": "Agent protocol refinement",
+      "status": "in-progress"
+    },
+    {
+      "label": "Production-ready build system",
+      "status": "complete"
+    }
+  ]
 }

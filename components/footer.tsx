@@ -12,17 +12,9 @@ export function Footer() {
       <div className="border-t border-border/50 py-8 sm:py-12">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-            <Link href="/" className="flex items-center gap-2" aria-label="Neural Chromium home">
-              <div className="relative flex h-8 w-8 items-center justify-center">
-                <Image
-                  src="/Untitled design (7).png"
-                  alt="Neural Chromium Logo"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <span className="font-mono text-sm text-muted-foreground">
-                Neural Chromium
+            <Link href="/" className="flex items-center gap-2" aria-label="Glazyr Viz home">
+              <span className="text-xl font-bold tracking-tight text-white">
+                GLAZYR<span className="text-primary">VIZ</span>
               </span>
             </Link>
 
@@ -66,7 +58,7 @@ export function Footer() {
                 GitHub
               </Link>
               <Link
-                href="https://github.com/senti-001/neural-chromium-contracts"
+                href="https://github.com/senti-001/glazyr-portal-contracts"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-muted-foreground transition-colors hover:text-foreground"
@@ -78,7 +70,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground transition-colors hover:text-foreground"
-                aria-label="Neural Chromium on GitHub"
+                aria-label="Glazyr Viz on GitHub"
               >
                 <Github className="h-4 w-4" />
               </Link>

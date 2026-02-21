@@ -39,7 +39,7 @@ export function OverviewSection() {
             Industrial Infrastructure for Agentic Computing
           </h2>
           <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Neural Chromium reimagines the browser as industrial-grade infrastructure for AI agents.
+            Glazyr Viz reimagines the browser as industrial-grade infrastructure for AI agents.
             Every component is designed for high-throughput, low-latency programmatic interaction.
             Powered by NVIDIA 5090 clusters and EC2 Big Iron.
           </p>

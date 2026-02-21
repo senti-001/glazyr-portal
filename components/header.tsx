@@ -7,7 +7,8 @@ import { Menu, X, Github } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 
-const GITHUB_URL = "https://github.com/senti-001/neural-chromium"
+const GITHUB_URL = "https://github.com/senti-001/glazyr-viz"
+const SOVEREIGN_LINK = "https://form.typeform.com/to/sbdm0689"
 
 const navLinks = [
   { href: "#overview", label: "Overview" },
@@ -34,15 +35,18 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-md">
       <nav aria-label="Main navigation" className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 sm:h-28 sm:px-6">
-        <Link href="/" className="flex items-center" aria-label="Neural Chromium home">
+        <Link href="/" className="flex items-center" aria-label="Glazyr Viz home">
           <div className="relative h-16 w-64 sm:h-24 sm:w-[350px]">
             <Image
               src="/logo-v2.png"
-              alt="Neural Chromium Logo"
-              fill
-              className="object-contain object-left"
-              priority
+              alt="Glazyr Viz Logo"
+              width={32}
+              height={32}
+              className="h-8 w-8 text-primary"
             />
+            <span className="font-mono text-lg font-bold tracking-tight text-foreground sm:text-xl">
+              GLAZYR<span className="text-primary">VIZ</span>
+            </span>
           </div>
         </Link>
 
@@ -64,6 +68,11 @@ export function Header() {
             <Link href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
               <Github className="h-4 w-4" />
               <span>GitHub</span>
+            </Link>
+          </Button>
+          <Button size="sm" className="hidden gap-2 md:flex" asChild>
+            <Link href={SOVEREIGN_LINK} target="_blank" rel="noopener noreferrer">
+              <span>Sovereign Link</span>
             </Link>
           </Button>
           <Button
@@ -102,6 +111,15 @@ export function Header() {
             >
               <Github className="h-4 w-4" />
               GitHub
+            </Link>
+            <Link
+              href={SOVEREIGN_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2.5 rounded-lg px-4 py-3 text-base font-bold text-primary transition-colors hover:bg-muted"
+              onClick={() => setMobileOpen(false)}
+            >
+              Sovereign Link
             </Link>
           </nav>
         </div>

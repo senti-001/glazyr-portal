@@ -2,14 +2,14 @@ import Link from "next/link"
 import { Github, MessageSquarePlus, Star, GitFork } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-const GITHUB_URL = "https://github.com/senti-001/neural-chromium"
+const GITHUB_URL = "https://github.com/senti-001/glazyr-viz"
 
 const cards = [
   {
     icon: Star,
     title: "Star the Repo",
     description:
-      "Show your support by starring the Neural Chromium repository on GitHub. It helps us gain visibility in the AI developer community.",
+      "Show your support by starring the Glazyr Viz repository on GitHub. It helps us gain visibility in the AI developer community.",
     href: GITHUB_URL,
     linkLabel: "Star on GitHub",
   },
@@ -17,7 +17,7 @@ const cards = [
     icon: MessageSquarePlus,
     title: "Suggest Features",
     description:
-      "Have an idea for Neural Chromium? Submit a feature request through GitHub Issues. Our feature_bot.py will triage and track your suggestion.",
+      "Have an idea for Glazyr Viz? Submit a feature request through GitHub Issues. Senti will triage and track your suggestion.",
     href: `${GITHUB_URL}/issues`,
     linkLabel: "Open an Issue",
   },
@@ -43,7 +43,7 @@ export function CommunitySection() {
             Join the Community
           </h2>
           <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Neural Chromium is built in the open. Whether you&apos;re an AI developer, an OpenClaw user, or
+            Glazyr Viz is built in the open. Whether you&apos;re an AI developer, an OpenClaw user, or
             simply curious about agentic computing, there&apos;s a place for you.
           </p>
         </div>

@@ -27,7 +27,7 @@ export function IntelligenceStream() {
                 <iframe
                     src="https://neuralchromium.blogspot.com/"
                     className="w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-700 opacity-90 group-hover:opacity-100"
-                    title="Neural Chromium Blogger Feed"
+                    title="Glazyr Viz Blogger Feed"
                 />
 
                 {/* Overlay for premium feel */}

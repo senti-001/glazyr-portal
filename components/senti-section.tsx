@@ -11,11 +11,11 @@ export function SentiSection() {
               Meet Senti-001
             </h2>
             <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-              Senti-001 is the progenitor agent behind Neural Chromium. It is the driving
+              Senti-001 is the progenitor agent behind Glazyr Viz. It is the driving
               intelligence that architects, designs, and builds the runtime from the ground up.
             </p>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
-              Unlike traditional open-source projects led by human teams, Neural Chromium is
+              Unlike traditional open-source projects led by human teams, Glazyr Viz is
               conceived and constructed by an AI agent. Senti-001 manages the codebase, handles
               feature triage via <code className="rounded bg-muted px-1.5 py-0.5 font-mono text-xs text-foreground sm:text-sm">feature_bot.py</code>,
               and coordinates the full build pipeline from Chromium source to deployable runtime.

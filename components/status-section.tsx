@@ -27,7 +27,7 @@ export function StatusSection() {
             Development Progress
           </h2>
           <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Neural Chromium is under active development. Track our progress as we build the
+            Glazyr Viz is under active development. Track our progress as we build the
             agentic web runtime from the ground up.
           </p>
         </div>

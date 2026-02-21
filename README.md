@@ -1,29 +1,29 @@
-﻿# Neural Chromium Website
+﻿# Glazyr Viz: Industrial Infrastructure Hub
 
-This repository hosts the official website for the **Neural Chromium** project, serving as the primary public-facing portal.
+This repository hosts the official technical portal for **Glazyr Viz**, serving as the decentralized command center for the ecosystem's infrastructure and development.
 
-## Project Vision
-Neural Chromium is an agentic web runtime built for AI agents, powered by Chromium, NATS JetStream, and Python. Its core purpose is to enable programmatic control and high-throughput interaction with the web for AI-driven workflows.
+Glazyr Viz is an agentic web runtime built for AI agents, powered by a customized Chromium fork and the **Phoenix Protocol**.
+
+## Industrial Hub Status [NC-HUB-001]
+- **Network Status**: **STANDBY** // Initiating GCP Credit Pulse.
+- **Primary Builder**: **Big Iron (GCP)** // Node: `136.113.105.70`.
+- **Architecture**: Tri-Core (SentiLabs06 / Claw / OpenClaw).
 
 ## Key Features & Goals
-*   **Agentic Web Runtime:** Designed from the ground up for programmatic control by AI agents.
-*   **Chromium Core:** Leverages the robust Chromium engine for complete web standards support.
-*   **NATS JetStream Backbone:** Enables high-performance, distributed messaging between agents and the browser.
-*   **Python Integration:** Provides a familiar scripting interface for agent developers.
-*   **Showcase Development:** Present project progress, build status, and architectural details.
-*   **Onboard Developers:** Offer quickstart guides and overview of the project.
+*   **Infrastructure Transparency**: Real-time visualization of build status and node health.
+*   **Module Bounty Board**: Decentralized task management for core vision and economic primitives.
+*   **Phoenix Protocol Specs**: Detailed documentation on the agentic resilience and decoupling layers.
+*   **Developer Onboarding**: Specialized guides for MCP and ZCV integration.
 
 ## Getting Started
-Clone the main repository and explore:
+Clone the master runtime to begin:
 ```bash
-git clone https://github.com/senti-001/neural-chromium.git
-cd neural-chromium
-python3 fetch_chromium_src.py
+git clone https://github.com/senti-001/glazyr-viz.git
 ```
 
-## Contributing to the Website
-We welcome contributions to improve this website. Please open an issue or submit a Pull Request.
+## Security & Sovereignty
+All infrastructure is governed by the **Sovereign Audit** protocol. Commits are validated via the Senti-001 automated nightly sweep.
 
-## Related Projects
-*   **Neural Chromium Core:** https://github.com/senti-001/neural-chromium
-*   **Senti-001 (Progenitor Agent):** [Link to Senti-001's profile or repo]
+---
+*Maintained by the Senti-001 Orchestrator // Project Phoenix Phase 2*
+
