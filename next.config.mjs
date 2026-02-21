@@ -6,6 +6,15 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        destination: 'https://glazyr.com/:path*',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 export default nextConfig
