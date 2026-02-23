@@ -33,7 +33,7 @@ export function NetworkDisclaimer() {
                         </p>
                         <p className="mt-1 text-xs leading-relaxed text-amber-100/90 sm:text-sm">
                             All $NEURAL tokens, treasury balances, and bounty rewards are currently on the Solana Devnet.
-                            These represent technical validation of the Sovereign Cloud architecture and have{" "}
+                            These represent technical validation of the Agentic Cloud architecture and have{" "}
                             <span className="font-semibold text-amber-300">no real-world monetary value</span>.
                         </p>
                     </div>

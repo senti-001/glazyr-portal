@@ -12,7 +12,7 @@ const resources = [
     {
         icon: Github,
         title: "Main Repository",
-        description: "The Neural-Chromium browser fork with Zero-Copy Vision, Phoenix Protocol, and Sovereign Runtime.",
+        description: "The Neural-Chromium browser fork with Zero-Copy Vision, Phoenix Protocol, and Agentic Runtime.",
         link: GITHUB_MAIN,
         linkText: "View on GitHub"
     },
@@ -33,7 +33,7 @@ const resources = [
     {
         icon: BookOpen,
         title: "Documentation",
-        description: "Technical specifications, API references, and integration guides for the Sovereign Fork.",
+        description: "Technical specifications, API references, and integration guides for the Agentic Fork.",
         link: `${GITHUB_MAIN}#readme`,
         linkText: "Read Docs"
     }
@@ -58,7 +58,7 @@ export function DeveloperResources() {
                         Developer Resources
                     </h2>
                     <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-                        Everything you need to build on the Sovereign Fork and contribute to the Agentic Web infrastructure.
+                        Everything you need to build on the Agentic Fork and contribute to the Agentic Web infrastructure.
                     </p>
                 </div>
 
@@ -111,7 +111,7 @@ export function DeveloperResources() {
                                 Join the Developer DAO
                             </h3>
                             <p className="mt-1 text-sm text-muted-foreground">
-                                Contribute to the Sovereign Fork and earn $NEURAL tokens through the Developer DAO bounty program.
+                                Contribute to the Agentic Fork and earn $NEURAL tokens through the Developer DAO bounty program.
                             </p>
                         </div>
                         <Button

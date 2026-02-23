@@ -23,7 +23,7 @@ const features = [
     },
     {
         icon: Zap,
-        title: "Sovereign Runtime",
+        title: "Agentic Runtime",
         description: "Complete control over the browser execution environment. No sandboxing, no permission prompts—just direct access to the web platform for maximum agentic capability.",
         technical: "Fork-level modifications enable capabilities impossible in standard Chromium builds"
     }
@@ -48,7 +48,7 @@ export function SecurityArchitecture() {
                         Security & Architecture
                     </h2>
                     <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-                        The Sovereign Fork implements fundamental architectural innovations that enable true agentic capabilities at the browser level.
+                        The Agentic Fork implements fundamental architectural innovations that enable true agentic capabilities at the browser level.
                     </p>
                 </div>
 
@@ -88,7 +88,7 @@ export function SecurityArchitecture() {
                                 The Latency Moat
                             </h3>
                             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                                Zero-Copy Vision + Sovereign Runtime = sub-10ms perception-to-action latency.
+                                Zero-Copy Vision + Agentic Runtime = sub-10ms perception-to-action latency.
                                 This performance envelope is architecturally impossible for browser extensions or
                                 automation frameworks. The fork-level approach creates a fundamental competitive moat.
                             </p>

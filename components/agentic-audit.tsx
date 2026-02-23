@@ -2,24 +2,24 @@
 
 import { useEffect, useState } from "react"
 
-interface SovereignAuditData {
+interface AgenticAuditData {
     rig_ratio: number
     treasury_balance: string
     vram_pool: string
     is_live: boolean
 }
 
-export function SovereignAudit() {
-    const [data, setData] = useState<SovereignAuditData | null>(null)
+export function AgenticAudit() {
+    const [data, setData] = useState<AgenticAuditData | null>(null)
 
     useEffect(() => {
         async function fetchAuditData() {
             try {
                 // TODO: Replace with actual Solana API endpoint
-                // const response = await fetch("/api/sovereign-audit")
+                // const response = await fetch("/api/agentic-audit")
 
                 // Using actual specification values
-                const auditData: SovereignAuditData = {
+                const auditData: AgenticAuditData = {
                     rig_ratio: 1.0, // 1GB VRAM / 1M $NEURAL
                     treasury_balance: "400M $NEURAL",
                     vram_pool: "40GB",
@@ -28,7 +28,7 @@ export function SovereignAudit() {
 
                 setData(auditData)
             } catch (err) {
-                console.error("Failed to fetch sovereign audit data:", err)
+                console.error("Failed to fetch system audit data:", err)
             }
         }
 
@@ -45,7 +45,7 @@ export function SovereignAudit() {
                 <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-mono text-xs text-muted-foreground">
                     <div className="flex items-center gap-2">
                         <span className={`h-1.5 w-1.5 rounded-full ${data.is_live ? 'bg-emerald-500' : 'bg-amber-500'} animate-pulse`} />
-                        <span className="hidden sm:inline">Sovereign Audit:</span>
+                        <span className="hidden sm:inline">System Audit:</span>
                     </div>
                     <div className="flex items-center gap-1">
                         <span className="text-muted-foreground/60">Rig-Ratio:</span>

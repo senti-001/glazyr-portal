@@ -2,7 +2,7 @@
     {
         "id": "NC-BTY-001",
         "title": "NC-BTY-001: IPI Shield",
-        "description": "Implement Indirect Prompt Injection protection for the Sovereign Fork. Build detection and scrubbing for hidden text attacks, plus Semantic Provenance tracking to verify content authenticity.",
+        "description": "Implement Indirect Prompt Injection protection for the Agentic Fork. Build detection and scrubbing for hidden text attacks, plus Semantic Provenance tracking to verify content authenticity.",
         "difficulty": "Expert",
         "scope": "~2,500 LOC, C++ & Python",
         "reward": "2,500,000 $NEURAL",

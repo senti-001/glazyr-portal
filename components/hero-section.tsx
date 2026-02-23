@@ -2,9 +2,15 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Github } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import dynamic from "next/dynamic"
+
+const TerminalNode = dynamic(
+  () => import("@/components/terminal-node").then((mod) => mod.TerminalNode),
+  { ssr: false }
+)
 
 const GITHUB_URL = "https://github.com/senti-001/glazyr-viz"
-const SOVEREIGN_LINK = "https://form.typeform.com/to/sbdm0689"
+const agentic_LINK = "https://form.typeform.com/to/sbdm0689"
 
 export function HeroSection() {
   return (
@@ -33,7 +39,7 @@ export function HeroSection() {
           </div>
 
           <h1 id="hero-heading" className="text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
-            The Sovereign Fork:
+            The Agentic Fork:
             <br />
             <span className="text-primary">Foundational Rails for the Agentic Web</span>
           </h1>
@@ -41,14 +47,14 @@ export function HeroSection() {
           <p className="mx-auto mt-4 max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground sm:mt-6 sm:text-lg">
             Glazyr Viz is industrial-grade infrastructure for agentic perception and action.
             Built on Chromium, NATS JetStream, and Solana—this isn't a tool, it's the foundational architecture
-            for the Sovereign Cloud. Zero-Copy Vision. Phoenix Protocol. Hardware-backed $GLAZYR economics.
+            for the Agentic Cloud. Zero-Copy Vision. Phoenix Protocol. Hardware-backed $GLAZYR economics.
           </p>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:mt-10 sm:flex-row sm:gap-4">
             <Button size="lg" className="w-full gap-2 font-mono text-sm sm:w-auto" asChild>
-              <Link href={SOVEREIGN_LINK} target="_blank" rel="noopener noreferrer">
+              <Link href={agentic_LINK} target="_blank" rel="noopener noreferrer">
                 <ArrowRight className="h-4 w-4" />
-                Initialize Sovereign Link
+                Initialize Agentic Link
               </Link>
             </Button>
             <Button variant="outline" size="lg" className="w-full gap-2 bg-transparent font-mono text-sm sm:w-auto" asChild>
@@ -60,29 +66,8 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="mx-auto mt-10 max-w-2xl sm:mt-16">
-          <div className="overflow-x-auto rounded-xl border border-border/50 bg-card p-3 font-mono text-xs shadow-lg sm:p-4 sm:text-sm" role="presentation" aria-label="Terminal showing installation commands">
-            <div className="flex items-center gap-2 pb-3 text-xs text-muted-foreground">
-              <span className="h-2.5 w-2.5 rounded-full bg-destructive/60 sm:h-3 sm:w-3" aria-hidden="true" />
-              <span className="h-2.5 w-2.5 rounded-full bg-chart-4/60 sm:h-3 sm:w-3" aria-hidden="true" />
-              <span className="h-2.5 w-2.5 rounded-full bg-primary/60 sm:h-3 sm:w-3" aria-hidden="true" />
-              <span className="ml-2">terminal</span>
-            </div>
-            <div className="space-y-1.5 text-muted-foreground">
-              <p className="whitespace-nowrap">
-                <span className="text-primary">$</span> git clone https://github.com/senti-001/glazyr-viz.git
-              </p>
-              <p>
-                <span className="text-primary">$</span> cd glazyr-viz
-              </p>
-              <p>
-                <span className="text-primary">$</span> python3 nexus_agent.py --vlm openai
-              </p>
-              <p className="text-muted-foreground/60">
-                {"// Running the Glazyr Viz agent..."}
-              </p>
-            </div>
-          </div>
+        <div className="mx-auto mt-10 max-w-2xl sm:mt-16 text-left">
+          <TerminalNode />
         </div>
       </div>
     </section>

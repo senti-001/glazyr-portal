@@ -21,8 +21,8 @@ Clone the master runtime to begin:
 git clone https://github.com/senti-001/glazyr-viz.git
 ```
 
-## Security & Sovereignty
-All infrastructure is governed by the **Sovereign Audit** protocol. Commits are validated via the Senti-001 automated nightly sweep.
+## Security & Agenticty
+All infrastructure is governed by the **System Audit** protocol. Commits are validated via the Senti-001 automated nightly sweep.
 
 ---
 *Maintained by the Senti-001 Orchestrator // Project Phoenix Phase 2*

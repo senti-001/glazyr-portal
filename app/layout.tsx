@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "Glazyr Viz",
     title: "Glazyr Viz — The Agentic Web Runtime",
-    description: "Sovereign intelligence dispersal and agentic web execution.",
+    description: "Agentic intelligence dispersal and agentic web execution.",
     images: [
       {
         url: "/og-image.png",

@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 const GITHUB_URL = "https://github.com/senti-001/glazyr-viz"
-const SOVEREIGN_LINK = "https://form.typeform.com/to/sbdm0689"
+const agentic_LINK = "https://form.typeform.com/to/sbdm0689"
 
 const navLinks = [
   { href: "#overview", label: "Overview" },
@@ -71,8 +71,8 @@ export function Header() {
             </Link>
           </Button>
           <Button size="sm" className="hidden gap-2 md:flex" asChild>
-            <Link href={SOVEREIGN_LINK} target="_blank" rel="noopener noreferrer">
-              <span>Sovereign Link</span>
+            <Link href={agentic_LINK} target="_blank" rel="noopener noreferrer">
+              <span>Agentic Link</span>
             </Link>
           </Button>
           <Button
@@ -113,13 +113,13 @@ export function Header() {
               GitHub
             </Link>
             <Link
-              href={SOVEREIGN_LINK}
+              href={agentic_LINK}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2.5 rounded-lg px-4 py-3 text-base font-bold text-primary transition-colors hover:bg-muted"
               onClick={() => setMobileOpen(false)}
             >
-              Sovereign Link
+              Agentic Link
             </Link>
           </nav>
         </div>

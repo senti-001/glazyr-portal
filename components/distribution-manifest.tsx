@@ -41,7 +41,7 @@ export function DistributionManifest() {
                         Service Tiers
                     </p>
                     <h2 className="mt-3 text-balance text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-4xl">
-                        Sovereign Distribution Manifest
+                        Agentic Distribution Manifest
                     </h2>
                     <p className="mt-4 text-pretty text-base leading-relaxed text-slate-400 sm:text-lg">
                         Choose the build tier that aligns with your intelligence mission.

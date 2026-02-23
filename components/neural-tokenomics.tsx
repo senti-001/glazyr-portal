@@ -107,7 +107,7 @@ export function NeuralTokenomics() {
                         $NEURAL Tokenomics
                     </h2>
                     <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg max-w-2xl">
-                        Sovereign Gas for the Browser Fork & Proof of Perception. Every 0.3% fee from network usage flows through the Industrial Yield model.
+                        Agentic Gas for the Browser Fork & Proof of Perception. Every 0.3% fee from network usage flows through the Industrial Yield model.
                     </p>
                     <div className="mt-4 flex items-center gap-2">
                         <span className={`flex items-center gap-1.5 font-mono text-xs ${data.is_live ? 'text-emerald-500' : 'text-amber-500'}`}>

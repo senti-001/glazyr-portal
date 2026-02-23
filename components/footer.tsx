@@ -1,14 +1,14 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Github } from "lucide-react"
-import { SovereignAudit } from "@/components/sovereign-audit"
+import { AgenticAudit } from "@/components/agentic-audit"
 
 const GITHUB_URL = "https://github.com/senti-001/neural-chromium"
 
 export function Footer() {
   return (
     <footer role="contentinfo">
-      <SovereignAudit />
+      <AgenticAudit />
       <div className="border-t border-border/50 py-8 sm:py-12">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">

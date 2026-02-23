@@ -5,7 +5,7 @@ import { Code2, Shield, Cpu, TrendingUp, Coins } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const GITHUB_URL = "https://github.com/senti-001/neural-chromium"
-const SOVEREIGN_LINK = "https://form.typeform.com/to/sbdm0689"
+const agentic_LINK = "https://form.typeform.com/to/sbdm0689"
 
 import bountiesData from "@/data/bounties.json"
 
@@ -38,7 +38,7 @@ export function ModuleBountyBoard() {
                         Module Bounty Board
                     </h2>
                     <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-                        Build critical infrastructure modules for the Sovereign Fork. Earn $NEURAL tokens (Devnet) by solving hard technical challenges in security, DOM interaction, and privacy.
+                        Build critical infrastructure modules for the Agentic Fork. Earn $NEURAL tokens (Devnet) by solving hard technical challenges in security, DOM interaction, and privacy.
                     </p>
                 </div>
 
@@ -130,7 +130,7 @@ export function ModuleBountyBoard() {
                             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                                 The Developer DAO receives 10% of all Industrial Yield from the 0.3% network fee.
                                 These funds are allocated to bounty rewards, grants, and community-driven development.
-                                By claiming a bounty, you become part of the Sovereign Fork's economic architecture.
+                                By claiming a bounty, you become part of the Agentic Fork's economic architecture.
                             </p>
                             <div className="mt-4 flex flex-wrap gap-4 text-xs font-mono">
                                 <div>
@@ -151,12 +151,12 @@ export function ModuleBountyBoard() {
                     <p className="text-sm text-muted-foreground">
                         Have an idea for a new bounty?{" "}
                         <Link
-                            href={SOVEREIGN_LINK}
+                            href={agentic_LINK}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-primary hover:underline font-medium"
                         >
-                            Propose it via Sovereign Link
+                            Propose it via Agentic Link
                         </Link>
                     </p>
                 </div>

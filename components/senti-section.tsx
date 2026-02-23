@@ -52,6 +52,10 @@ export function SentiSection() {
                   <dd className="text-right text-foreground">Chromium / NATS / Python</dd>
                 </div>
                 <div className="flex justify-between">
+                  <dt className="text-muted-foreground">Economic Layer</dt>
+                  <dd className="text-right text-foreground">x402 Protocol / Base USDC</dd>
+                </div>
+                <div className="flex justify-between">
                   <dt className="text-muted-foreground">Status</dt>
                   <dd className="flex items-center gap-1.5 text-primary">
                     <span className="relative flex h-2 w-2" aria-hidden="true">
