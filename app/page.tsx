@@ -1,39 +1,15 @@
-import { Header } from "@/components/header"
-import { NetworkDisclaimer } from "@/components/network-disclaimer"
-import { HeroSection } from "@/components/hero-section"
-import { OverviewSection } from "@/components/overview-section"
-import { PhoenixProtocol } from "@/components/phoenix-protocol"
-import { SecurityArchitecture } from "@/components/security-architecture"
-import { StatusSection } from "@/components/status-section"
-import { NeuralTokenomics } from "@/components/neural-tokenomics"
-import { DeveloperResources } from "@/components/developer-resources"
-import { GatewaySection } from "@/components/gateway-section"
-import { ModuleBountyBoard } from "@/components/module-bounty-board"
-import { BenchmarkComparison } from "@/components/benchmark-comparison"
-import { DistributionManifest } from "@/components/distribution-manifest"
-import { SentiSection } from "@/components/senti-section"
-import { Footer } from "@/components/footer"
+"use client"
+
+import { useEffect } from "react"
 
 export default function Page() {
+  useEffect(() => {
+    window.location.replace("https://glazyr.com")
+  }, [])
+
   return (
-    <div className="min-h-screen">
-      <NetworkDisclaimer />
-      <Header />
-      <main>
-        <HeroSection />
-        <OverviewSection />
-        <PhoenixProtocol />
-        <SecurityArchitecture />
-        <BenchmarkComparison />
-        <StatusSection />
-        <DistributionManifest />
-        <NeuralTokenomics />
-        <DeveloperResources />
-        <ModuleBountyBoard />
-        <GatewaySection />
-        <SentiSection />
-      </main>
-      <Footer />
+    <div className="min-h-screen flex items-center justify-center text-white font-mono text-sm">
+      <p>Redirecting to the unified Glazyr Viz dashboard...</p>
     </div>
   )
 }
