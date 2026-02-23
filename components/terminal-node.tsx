@@ -103,7 +103,6 @@ export function TerminalNode() {
                     ...prev,
                     "Available commands:",
                     "  /status    - Chromium health, DMA metrics & on-chain balances",
-                    "  /bounty    - Access the 'Search & Extract' CTF",
                     "  /x402      - Display economic layer integration details",
                     "  /capture   - [URL] Execute zero-copy vision (Requires 0.001 USDC or ETH eq.)",
                     "  /benchmark - Run performance comparison vs Standard CDP",
@@ -131,21 +130,13 @@ export function TerminalNode() {
             case "/benchmark":
                 setHistory(prev => [
                     ...prev,
-                    "--- NEURAL CHROMIUM PERFORMANCE COMPARISON ---",
+                    "--- GLAZYR VIZ PERFORMANCE COMPARISON ---",
                     "METHOD:      STANDARD CDP    GLAZYR DMA (ZERO-COPY)",
                     "LATENCY:     198ms           142ms (-28%)",
                     "JITTER (P99): 2,378ms         338ms (-85.8%)",
                     "TOKEN COST:  1.0x            0.47x",
                     "----------------------------------------------",
                     "RESULT: PERFORMANCE CROSSOVER DETECTED."
-                ])
-                break
-            case "/bounty":
-                setHistory(prev => [
-                    ...prev,
-                    "[BOUNTY] Search & Extract CTF - 500 USDC Reward",
-                    "[BOUNTY] Requires 'shm_vision_read' tool for high-dynamic parsing.",
-                    "[BOUNTY] First, fund this session wallet, then use /capture to analyze."
                 ])
                 break
             case "/x402":

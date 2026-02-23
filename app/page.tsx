@@ -1,15 +1,25 @@
-"use client"
+import { Navbar } from "@/components/glazyr/navbar"
+import { Hero } from "@/components/glazyr/hero"
+import { TelemetryDashboard } from "@/components/glazyr/telemetry-dashboard"
+import { ContributionBoard } from "@/components/glazyr/bounty-board"
+import { IntelligenceHub } from "@/components/glazyr/intelligence-hub"
+import { AgenticLink } from "@/components/glazyr/agentic-link"
+import { PricingSection } from "@/components/glazyr/pricing-section"
+import { Footer } from "@/components/glazyr/footer"
 
-import { useEffect } from "react"
-
-export default function Page() {
-  useEffect(() => {
-    window.location.replace("https://glazyr.com")
-  }, [])
-
+export default function GlazyrHome() {
   return (
-    <div className="min-h-screen flex items-center justify-center text-white font-mono text-sm">
-      <p>Redirecting to the unified Glazyr Viz dashboard...</p>
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <TelemetryDashboard />
+        <PricingSection />
+        <ContributionBoard />
+        <IntelligenceHub />
+        <AgenticLink />
+      </main>
+      <Footer />
+    </>
   )
 }

@@ -108,10 +108,10 @@ export function DeveloperResources() {
                         </div>
                         <div className="flex-1">
                             <h3 className="font-mono text-lg font-semibold text-foreground">
-                                Join the Developer DAO
+                                Build the Agentic Web
                             </h3>
                             <p className="mt-1 text-sm text-muted-foreground">
-                                Contribute to the Agentic Fork and earn $NEURAL tokens through the Developer DAO bounty program.
+                                Join the mission to decentralize browser infrastructure and scale the Glazyr Viz network.
                             </p>
                         </div>
                         <Button
@@ -119,8 +119,8 @@ export function DeveloperResources() {
                             className="gap-2 font-mono"
                             asChild
                         >
-                            <Link href="#bounties">
-                                View Bounties
+                            <Link href={GITHUB_MAIN} target="_blank">
+                                Start Building
                             </Link>
                         </Button>
                     </div>

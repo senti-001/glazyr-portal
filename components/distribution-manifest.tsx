@@ -41,7 +41,7 @@ export function DistributionManifest() {
                         Service Tiers
                     </p>
                     <h2 className="mt-3 text-balance text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-4xl">
-                        Agentic Distribution Manifest
+                        Glazyr Viz Distribution Manifest
                     </h2>
                     <p className="mt-4 text-pretty text-base leading-relaxed text-slate-400 sm:text-lg">
                         Choose the build tier that aligns with your intelligence mission.
@@ -54,8 +54,8 @@ export function DistributionManifest() {
                         <div
                             key={tier.name}
                             className={`relative flex flex-col rounded-3xl border p-8 shadow-xl transition-all hover:scale-[1.02] ${tier.highlight
-                                    ? "border-primary bg-slate-900/80 ring-1 ring-primary"
-                                    : "border-slate-800 bg-slate-950/50"
+                                ? "border-primary bg-slate-900/80 ring-1 ring-primary"
+                                : "border-slate-800 bg-slate-950/50"
                                 }`}
                         >
                             <div className="flex items-center gap-4">
@@ -82,8 +82,8 @@ export function DistributionManifest() {
                             </ul>
 
                             <button className={`mt-10 rounded-xl py-3 px-6 text-sm font-bold transition-colors ${tier.highlight
-                                    ? "bg-primary text-black hover:bg-primary/90"
-                                    : "bg-slate-800 text-slate-100 hover:bg-slate-700"
+                                ? "bg-primary text-black hover:bg-primary/90"
+                                : "bg-slate-800 text-slate-100 hover:bg-slate-700"
                                 }`}>
                                 Initialize Distribution
                             </button>

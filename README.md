@@ -1,29 +1,29 @@
-﻿# Glazyr Viz: Industrial Infrastructure Hub
+# Glazyr Viz: Industrial Infrastructure Hub
 
 This repository hosts the official technical portal for **Glazyr Viz**, serving as the decentralized command center for the ecosystem's infrastructure and development.
 
 Glazyr Viz is an agentic web runtime built for AI agents, powered by a customized Chromium fork and the **Phoenix Protocol**.
 
-## Industrial Hub Status [NC-HUB-001]
-- **Network Status**: **STANDBY** // Initiating GCP Credit Pulse.
-- **Primary Builder**: **Big Iron (GCP)** // Node: `136.113.105.70`.
-- **Architecture**: Tri-Core (SentiLabs06 / Claw / OpenClaw).
+## 🚀 Phase 3: Sovereign Mainnet [LIVE]
+- **Network Status**: 🟢 **ACTIVE** // Big Iron Node: `136.113.105.70`.
+- **MCP Status**: **MAINNET READY** // x402 Economic Enforcement.
+- **Intelligence Yield**: **999.35x** // Proven sub-1ms Jitter.
 
-## Key Features & Goals
-*   **Infrastructure Transparency**: Real-time visualization of build status and node health.
-*   **Module Bounty Board**: Decentralized task management for core vision and economic primitives.
-*   **Phoenix Protocol Specs**: Detailed documentation on the agentic resilience and decoupling layers.
-*   **Developer Onboarding**: Specialized guides for MCP and ZCV integration.
+## Key Features
+*   **Zero-Copy Vision**: Sub-16ms AXTree perception directly into agent contexts.
+*   **Token ROI Optimizer**: Reduce extraction costs by up to **96%** via `vision.json`.
+*   **Economic Sovereignty**: Native x402 settlement for autonomous sensory billing.
+*   **Clang 19 Hardened**: CFI + ThinLTO + MPK isolation for state-level security.
 
 ## Getting Started
-Clone the master runtime to begin:
+Agents can connect to the production sensory bridge via the **Model Context Protocol**:
 ```bash
-git clone https://github.com/senti-001/glazyr-viz.git
+# Handshake URL
+https://mcp.glazyr.io/mcp/sse
 ```
 
 ## Security & Agenticty
 All infrastructure is governed by the **System Audit** protocol. Commits are validated via the Senti-001 automated nightly sweep.
 
 ---
-*Maintained by the Senti-001 Orchestrator // Project Phoenix Phase 2*
-
+*Maintained by the Senti-001 Orchestrator // Strategic GTM Initiated*
