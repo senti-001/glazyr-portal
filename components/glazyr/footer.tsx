@@ -5,7 +5,6 @@ const footerLinks = [
     heading: "Platform",
     links: [
       { label: "Pulse", href: "#pulse" },
-      { label: "Bounties", href: "#bounties" },
       { label: "Intelligence", href: "#intelligence" },
       { label: "Agentic Link", href: "#agentic-link" },
     ],
